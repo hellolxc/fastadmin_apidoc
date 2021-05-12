@@ -1,0 +1,33 @@
+{
+    "name": "thinker/fastadmin_apidoc",
+	"description": "基于Fastadmin Apidoc 基础修改的文档生成命令",
+    "type": "think-extend",
+    "authors": [
+        {
+            "name": "thinker",
+            "email": "lxc_yx@139.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+    	"php": ">=5.6",
+        "composer-plugin-api": "^1.0||^2.0"
+    },
+    "require-dev": {
+        "composer/composer": "^1.0||^2.0"
+    },
+    "license": "Apache-2.0",
+    "autoload": {
+        "psr-4": {
+            "thinker\\apidoc\\": "src"
+        },
+        "files": [
+            "src/common.php"
+    	]
+    },
+    "extra": {
+        "think-config": {
+            "apidoc": "src/config.php"
+        }
+    }
+}
