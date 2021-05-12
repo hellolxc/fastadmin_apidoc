@@ -1,6 +1,6 @@
 <?php
 
-namespace thinker\apidoc\commands;
+namespace thinkers\apidoc\commands;
 
 use Exception;
 use think\Config;
@@ -50,7 +50,7 @@ class Api extends Command
         if (!file_put_contents($this->getOutputFilePath(), $content)) {
             throw new Exception('Cannot save the content to ' . $this->getOutputFilePath());
         }
-        
+
         $output->info("Build Successed!");
     }
 

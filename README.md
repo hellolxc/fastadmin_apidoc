@@ -1,5 +1,5 @@
 ### 安装
-> composer require thinker/fastadmin_apidoc
+> composer require thinkers/fastadmin_apidoc
 
 ### 介绍
 基于fastadmin api文档生成代码基础上修改，保留了全部的原生命令 新增以下功能
@@ -33,7 +33,7 @@ php think apidoc
 $commandName = "\\app\\admin\\command\\" . ucfirst($commandtype);
 //在上面👆这一行后添加下面👇的代码 即可将命令替换为apidoc 一键生成文档就支持自定义目录 和 排除指定类啦 
 if ($commandtype === "api") {
-    $commandName = "\\thinker\\apidoc\\commands\\". ucfirst($commandtype);
+    $commandName = "\\thinkers\\apidoc\\commands\\". ucfirst($commandtype);
 }
 ```
 
