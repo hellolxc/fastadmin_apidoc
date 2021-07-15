@@ -2,5 +2,5 @@
 
 //注册文档生成命令
 \think\Console::addDefaultCommands([
-    "thinker\\apidoc\\commands\\Api"
+    "thinkers\\apidoc\\commands\\Api"
 ]);
